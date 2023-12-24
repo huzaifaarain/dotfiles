@@ -40,3 +40,5 @@ alias dcstart="docker compose start"
 alias dcstop="docker compose stop"
 alias dcip="docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}'"
 alias dcterm="docker exec -it"
+
+alias sshwithpass="ssh -o PubkeyAuthentication=no -o PreferredAuthentications=password $1"

@@ -15,7 +15,8 @@ DEFAULT_USER=`whoami`
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git laravel4 laravel5 composer macos vagrant)
+
+plugins=(git laravel4 laravel5 composer macos vagrant zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -59,10 +60,6 @@ ssh-add -A 2>/dev/null;
 
 # Setup xdebug
 export XDEBUG_CONFIG="idekey=VSCODE"
-
-# Enable autosuggestions
-source /home/linuxbrew/.linuxbrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-
 
 # Extra paths
 export PATH=$PATH:~/.config/composer/vendor/bin
