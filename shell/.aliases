@@ -1,0 +1,42 @@
+# PHP
+alias phpunit="vendor/bin/phpunit"
+alias phpunitw="phpunit-watcher watch"
+alias a="php artisan"
+alias ar="php artisan remote"
+alias c="composer"
+alias cu="composer update"
+alias cr="composer require"
+alias ci="composer install"
+alias cda="composer dump-autoload -o"
+alias larastan="vendor/bin/phpstan analyse"
+alias hostfile="sudo vi /etc/hosts"
+alias mfs='php artisan migrate:fresh --seed'
+alias nah='git reset --hard;git clean -df'
+
+alias pp="php artisan test --parallel"
+alias d="php artisan dusk"
+alias sshconfig="vi ~/.ssh/config"
+
+# Git
+alias gc="git checkout"
+alias gpo="git push origin"
+alias gm="git merge"
+alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
+# Fast open
+alias o="open ."
+
+# List all files colorized in long format
+alias l="ls -laF"
+
+# IP addresses
+alias ip="curl ifconfig.me/ip ; echo"
+alias localip="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
+
+alias computanGit="git config user.email 'harain@computan.net' && git config user.name 'Muhammad Huzaifa'"
+alias personalGit="git config user.email 'huzaifa.itgroup@gmail.com' && git config user.name 'Muhammad Huzaifa'"
+
+alias dcstart="docker compose start"
+alias dcstop="docker compose stop"
+alias dcip="docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}'"
+alias dcterm="docker exec -it"
